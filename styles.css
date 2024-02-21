@@ -1,0 +1,115 @@
+/* Reset CSS para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.plano {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.planos-container {
+    display: flex; /* Usar flexbox para alinhar os planos lado a lado */
+    justify-content: space-around; /* Espaço igual entre os planos */
+    flex-wrap: wrap; /* Quebra de linha se não houver espaço suficiente */
+}
+
+.plano {
+    width: 40%; /* Largura dos planos */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinha o conteúdo no centro */
+}
+
+.plano h3 {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+.plano button {
+    margin-top: 10px; /* Adiciona espaço acima do botão */
+}
+
+
+.plano button {
+    margin-top: 10px; /* Adiciona espaço acima do botão */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .plano {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
